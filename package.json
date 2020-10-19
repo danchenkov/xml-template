@@ -1,0 +1,37 @@
+{
+  "name": "xmltemplate",
+  "displayName": "XML Template",
+  "description": "XML Template with HTML in CDATA",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "xmltemplate",
+        "aliases": [
+          "XML Template"
+        ],
+        "extensions": [
+          ".xml"
+        ],
+        "extensionDependencies": [
+          "html",
+          "xml"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "xmltemplate",
+        "scopeName": "text.xml.template",
+        "path": "./syntaxes/xmltemplate.tmLanguage.json"
+      }
+    ]
+  }
+}

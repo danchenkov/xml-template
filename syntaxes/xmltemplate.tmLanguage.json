@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "XML Template",
+  "scopeName": "text.xml.template",
+  "fileTypes": ["xml"],
+  "patterns": [
+    {
+      "begin": "<!\\[CDATA\\[",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.xml"
+        }
+      },
+      "end": "]]>",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.xml"
+        }
+      },
+      "contentName": "text.html.jet",
+      "patterns": [
+        {
+          "include": "text.html.jet"
+        }
+      ]
+    },
+    {
+      "include": "text.xml"
+    }
+  ]
+}
